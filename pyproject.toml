@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "smart-scrap"
+version = "0.1.0"
+description = "Scraper application using llms"
+authors = ["IanKarlo <iankarlots@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+selenium = "^4.26.1"
+streamlit = "^1.40.1"
+beautifulsoup4 = "^4.12.3"
+langchain = "^0.3.7"
+langchain-google-genai = "^2.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
