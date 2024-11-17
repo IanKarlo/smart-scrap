@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 
 def local_scrape(url: str, chrome_driver_path: str) -> str:
     options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
     try:
         driver.get(url)
